@@ -1,0 +1,11 @@
+* Objetivo
+Nesse Exercício-Programa, foi proposto criar um programa que comprimia e descomprimia uma imagem. Para comprimir, deveríamos simplesmente retirar alguns pixels da imagem, já para descomprimir, deveríamos usar métodos de interpolação para inserir os novos pixels, ou seja, interpolar funções em R^2, já que estamos considerando que a imagem pode ser uma função que associa um ponto de coordenada (x, y) para um valor de vermelho, outro para o azul e outro para o verde. O espaçamento h entre um pixel e outro, ou seja, qual a distância de um pixel para o seu adjacente, pode ser definido.
+Para essa interpolação, foram passados dois métodos que serviram como base para o desenvolvimento do algoritmo: Interpolação Bilinear e Interpolação Bicúbica. Vamos explicar brevemente como esses métodos funcionam e como implementamos no nosso algoritmo.
+
+* Interpolação Bilinear
+Nesse método, para interpolar um pixel de coordenadas (x,y) desconhecido da imagem
+* Interpolação Bicúbica
+
+* Resultados obtidos
+    - Com imagens geradas de funções
+    - Com imagens quaisquer
