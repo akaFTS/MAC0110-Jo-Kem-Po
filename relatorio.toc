@@ -1,0 +1,7 @@
+\contentsline {section}{\numberline {1}Objetivo}{2}
+\contentsline {section}{\numberline {2}Interpola\IeC {\c c}\IeC {\~a}o Bilinear por partes}{2}
+\contentsline {subsection}{\numberline {2.1}Resultados no Zool\IeC {\'o}gico}{3}
+\contentsline {subsection}{\numberline {2.2}Resultados na Selva}{3}
+\contentsline {section}{\numberline {3}Interpola\IeC {\c c}\IeC {\~a}o Bic\IeC {\'u}bica por partes}{3}
+\contentsline {subsection}{\numberline {3.1}Resultados no Zool\IeC {\'o}gico}{4}
+\contentsline {subsection}{\numberline {3.2}Resultados na Selva}{4}

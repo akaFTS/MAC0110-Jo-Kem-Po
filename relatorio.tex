@@ -1,0 +1,80 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc} % Para caracteres en español
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{indentfirst}
+%\usepackage[brazil]{babel}
+\setlength{\parindent}{1cm}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\renewcommand*\contentsname{Índice}
+ 
+% capa
+\begin{document}
+	\begin{titlepage} %iniciando a "capa"
+	\begin{center} %centralizar o texto abaixo
+	{\large Universidade de São Paulo}\\[0.2cm] %0,2cm é a distância entre o texto dessa linha e o texto da prox
+	{\large Instituto de Matemática e Estatística}\\[0.2cm] % o comando \\ "manda" o texto ir para próxima linha
+	{\large MAC0210}\\[5.1cm]
+	{\bf \huge Relat\'orio: Exerc\'icio-Programa 2}\\[5.1cm] % o comando \bf deixa o texto entre chaves em negrito. O comando \huge deixa o texto enorme
+	\end{center} %término do comando centralizar
+	{\large Alunos:}\\ 
+	{Gustavo Silva \tab\tab\tab No USP: 9298260\\
+	 Leonardo Padilha \tab\tab\tab No USP: 9298295}\\[0.7cm] % o comando \large deixa o texto grande
+	{\large Professor: Ernesto G. Birgin}\\[5.1cm]
+	\end{titlepage} %término da "capa"
+	
+	\tableofcontents
+	\pagebreak
+	\section{Objetivo}
+	\setlength{\parindent}{10ex}
+	Nosso objetivo nesse Exercício-Programa é gerar um programa que comprima e descomprima uma dada imagem. \par
+	Para comprimir, basta remover alguns pixels da imagem, mais precisamente, dado um número real $k$, e considerando que a imagem é uma matriz de pixels, então removemos as linhas e as colunas $i$ tais que $i \equiv 1\ \textrm{mod}(k + 1)$. \par
+	Para fazer a descompressão, assumimos que a imagem é, basicamente, uma função que vai do $\mathbb{R}^2$ para o $\mathbb{R}^3$ ($\mathbb{R}^3$ pois estamos considerando a paleta RGB, logo, uma coordenada para cada cor da paleta) e, dessa forma, cada pixel vira um ponto no plano $\mathbb{R}^2$ (devemos considerar também que o espaçamento entre dois pixels adjacentes $h$ foi definido por nós). Agora, para inserirmos os novos pixels de coordenadas $(x, y) \in \mathbb{R}^2$ basta interpolarmos a função nessa região. \par
+	Para fazer a interpolação, usamos dois métodos diferentes que são extensões para $\mathbb{R}^2$ dos métodos vistos em sala de aula. Vamos explicar e avaliar os resultados obtidos com cada um deles.
+	
+	\section{Interpolação Bilinear por partes}
+	Esse método é uma extensão para $\mathbb{R}^2$ da interpolação linear de uma função de $\mathbb{R}$ para $\mathbb{R}$. \par
+	Vamos considerar 4 pixels conhecidos adjacentes: $Q_{0}$, $Q_{1}$, $Q_{2}$ e $Q_{3}$. Esses pixels podem ser representados como pontos do plano $\mathbb{R}^2$ de coordenadas $(x_{i}, y_{j}), (x_{i+1}, y_{j}), (x_{i}, y_{j+1}), (x_{i+1}, y_{j+1})$, respectivamente onde $x_{i}, x_{i+1}, y_{j}, y_{j+1} \in \mathbb{R}$. Supondo que a imagem é uma amostra de uma função $f$ tal que $f: \mathbb{R}^2 \rightarrow \mathbb{R} $, então, para gerar um pixel que está em uma coordenada $(x_{0}, y_{0})$ tal que $x_{0} \in [x_{i}, x_{i+1}]$ e $y_{0} \in [y_{j}, y_{j+1}]$, podemos criar uma função interpoladora v, que interpola os valores no intervalo, dada por:
+	 \begin{equation}
+	 v(x, y) = c_{0} + c_{1}(x - x_{i}) + c_{2}(y - y_{j}) + c_{3}(x - x_{i})(y - y_{j})
+	 \end{equation}
+	 Para interpolar no ponto  $(x_{0}, y_{0})$, basta encontrarmos $c_{0}$, $c_{1}$, $c_{2}$ e $c_{3}$. Como a distância de dois pixels adjacentes é definida por um número real $h$, ou seja, $x_{i} - x_{i+1} = h$, então, temos o seguinte sistema: 
+	\[
+	 	\begin{array}{llll}
+	 		f(x_{i}, y_{j}) = c_{0}\\
+	 		f(x_{i}, y_{j+1}) = c_{0} + hc_{2}\\
+	 		f(x_{i+1}, y_{j}) = c_{0} + hc_{1}\\
+	 		f(x_{i+1}, y_{j+1}) = c_{0} + hc_{1} + h^2c_{2} + h^3c_{3}
+	 	\end{array}
+	 \]
+	 Fazendo as manipulações necessárias, chegamos que os coeficientes da função $v$ são: 
+	 \[
+	 	\begin{array}{llll}
+	 	c_{0} = f(x_{i}, y_{j})\\
+	 	c_{1} = \dfrac{f(x_{i+1}, y_{j}) - f(x_{i}, y_{j})}{h}\\
+	 	c_{2} = \dfrac{f(x_{i}, y_{j+1}) - f(x_{i}, y_{j})}{h}\\
+	 	c_{3} = \dfrac{f(x_{i+1}, y_{j+1}) - f(x_{i}, y_{j})}{h^3} - \dfrac{f(x_{i}, y_{j+1}) - f(x_{i}, y_{j})}{h^2}
+	 	\end{array}
+	 \]
+	 Assim, conseguimos calcular facilmente os pixels que serão inseridos entre quatro pixels adjacentes da imagem original, basta que apliquemos a função intepoladora para cada pixel que queremos inserir na imagem.
+		\subsection{Resultados no Zoológico}
+		\subsection{Resultados na Selva}
+	\section{Interpolação Bicúbica por partes}
+	A ideia desse método é um pouco mais sofisticado que o anterior, pois aqui exigimos que a função seja suave e que a função interpoladora também o seja em todo o domínio da interpolação. \par
+	Para entender o funcionamento, vamos considerar novamente os quatro pixels adjacentes $Q_{0}, Q_{1}, Q_{2}, Q_{3}$ com as mesmas coordenadas vistas anteriormente. Para interpolar um pixel que possui coordenadas $(x_{0}, y_{0})$ tal que $x_{0} \in [x_{i}, x_{i+1}]$ e $y_{0} \in [y_{j}, y_{j+1}]$, vamos interpolar a função $f$ geradora da imagem por uma função $v$ que terá como condições de interpolação as seguintes propriedades:
+	\[
+		\begin{array}{llllc}
+		\frac{\partial v}{\partial x}(x_{i}, y_{j}) = \frac{\partial f}{\partial x}(x_{i}, y_{j}), \quad \frac{\partial v}{\partial y}(x_{i}, y_{j}) = \frac{\partial f}{\partial x}(x_{i}, y_{j}), \quad \frac{\partial^2 v}{\partial xy}(x_{i}, y_{j}) = \frac{\partial^2 f}{\partial xy}(x_{i}, y_{j})\\
+		
+		\frac{\partial v}{\partial x}(x_{i+1}, y_{j}) = \frac{\partial f}{\partial x}(x_{i+1}, y_{j}), \quad \frac{\partial v}{\partial y}(x_{i+1}, y_{j}) = \frac{\partial f}{\partial x}(x_{i+1}, y_{j}), \quad \frac{\partial^2 v}{\partial xy}(x_{i+1}, y_{j}) = \frac{\partial^2 f}{\partial xy}(x_{i+1}, y_{j}) \\
+		
+		\frac{\partial v}{\partial x}(x_{i}, y_{j+1}) = \frac{\partial f}{\partial x}(x_{i}, y_{j+1}), \quad \frac{\partial v}{\partial y}(x_{i}, y_{j+1}) = \frac{\partial f}{\partial x}(x_{i}, y_{j+1}), \quad \frac{\partial^2 v}{\partial xy}(x_{i}, y_{j+1}) = \frac{\partial^2 f}{\partial xy}(x_{i}, y_{j+1}) \\
+				
+		\frac{\partial v}{\partial x}(x_{i+1}, y_{j+1}) = \frac{\partial f}{\partial x}(x_{i+1}, y_{j+1}), \quad \frac{\partial v}{\partial y}(x_{i+1}, y_{j+1}) = \frac{\partial f}{\partial x}(x_{i+1}, y_{j+1}), \\ \quad \frac{\partial^2 v}{\partial xy}(x_{i+1}, y_{j+1}) = \frac{\partial^2 f}{\partial xy}(x_{i+1}, y_{j+1})
+		\end{array}
+	\]
+	Em nossa implementação, porém, não tinhamos acesso as derivadas da função geradora da imagem $f$, por isso, para obte-la, usamos fórmulas que permitem aproximar esses valores. Nas bordas da imagem, utilizamos uma aproximação que leva em conta apenas um pixel a frente, a taxa de erro sendo $\mathcal{O}(h)$. No meio da imagem, usamos a fórmula centrada, que permite um erro de $\mathcal{O}(h^2)$, ou seja, uma aproximação melhor que nas bordas, entretanto, ficamos limitados com o erro das bordas. Vale lembrar que quanto menor for $h$, melhor será nossa aproximação e, consequentemente, nossa interpolação. Devemos apenas ficar atentos para escolha de um $h$ que seja suficientemente pequeno e que continue mantendo o erro de aproximação do método dominando o erro de arredondamento.
+	Para o nosso algoritmo, percorremos todos os pixels da imagem e verificamos onde deverá ser introduzido um novo pixel, e lá, fazemos a interpolação usando todas as fórmulas vistas aqui e pegando como $Q_{0}, Q_{1}, Q_{2}, Q_{3}$ os pixels conhecidos que estão mais próximos dele.
+		\subsection{Resultados no Zoológico}
+		\subsection{Resultados na Selva}
+\end{document}

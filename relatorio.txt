@@ -1,11 +1,45 @@
 * Objetivo
-Nesse Exercício-Programa, foi proposto criar um programa que comprimia e descomprimia uma imagem. Para comprimir, deveríamos simplesmente retirar alguns pixels da imagem, já para descomprimir, deveríamos usar métodos de interpolação para inserir os novos pixels, ou seja, interpolar funções em R^2, já que estamos considerando que a imagem pode ser uma função que associa um ponto de coordenada (x, y) para um valor de vermelho, outro para o azul e outro para o verde. O espaçamento h entre um pixel e outro, ou seja, qual a distância de um pixel para o seu adjacente, pode ser definido.
-Para essa interpolação, foram passados dois métodos que serviram como base para o desenvolvimento do algoritmo: Interpolação Bilinear e Interpolação Bicúbica. Vamos explicar brevemente como esses métodos funcionam e como implementamos no nosso algoritmo.
+Nosso objetivo nesse Exercício-Programa é gerar um programa que comprima e descomprima uma dada imagem. Para comprimir, basta remover alguns pixels da imagem. Para fazer a descompressão, assumimos que a imagem é, basicamente, uma função que vai do $\mathbb{R}^2$ para o $\mathbb{R}^2$ ($\mathbb{R}^2$ pois estamos considerando a paleta RGB e assim, uma coordenada para cada cor da paleta) e, dessa forma, cada pixel vira um ponto no plano $\mathbb{R}^2$ (devemos considerar também que o espaçamento entre dois pixels adjacentes $h$ foi definido por nós). Agora, para inserirmos os novos pixels de coordenadas (x, y) basta interpolarmos a função nessa região.
+Para fazer a interpolação, usamos dois métodos diferentes que são extensões para $\mathbb{R}^2$ dos métodos vistos em sala de aula. Vamos explicar a avaliar os resultados obtidos com cada um deles.
 
 * Interpolação Bilinear
-Nesse método, para interpolar um pixel de coordenadas (x,y) desconhecido da imagem
-* Interpolação Bicúbica
+    Esse método é uma extenção da interpolação linear de uma função R para R. 
+    Vamos considerar 4 pixels conhecidos, Q0, Q1, Q2 e Q3 de coordenadas (a, b), (a + h, b), (a, b + h), (a + h, b + h), respectivamente. Supondo que a imagem veio de uma função f de R² -> R, então, para gerar um pixel que está em uma coordenada (x0, y0) tal que x0 está contido em [a, a + h] e y0 está contido em [b, b + h], podemos criar uma função interpoladora v dada por:
+    v(x, y) = c0 + c1*x + c2*y + c3*x*y
+    Basta encontrarmos c0, c1, c2 e c3. Para isso, vamos usar os pontos que já conhecemos e tentaremos obter uma aproximação de f, obtemos, então, o seguinte sistema:
+    | f(Q0) = c0 + c1*a     + c2*      + c3*a*b 
+    | f(Q1) = c0 + c1*(a+h) + c2*b     + c3*(a+h)*b
+    | f(Q2) = c0 + c1*a     + c2*(b+h) + c3*a*(b+h)
+    | f(Q3) = c0 + c1*(a+h) + c2*(b+h) + c3*(a+h)*(b+h)
 
-* Resultados obtidos
-    - Com imagens geradas de funções
-    - Com imagens quaisquer
+    Resolvendo as equações acima, temos que os coeficientes são
+    c0 = f(Q0) - a*(f(Q1) - f(Q0))/h - b*(f(Q2) - f(Q0))/h + a*b*(e)
+    c1 = (f(Q1) - f(Q0))/h - b*(e)/h²
+    c2 = (f(Q2) - f(Q0))/h - a*(e)/h²
+    c3 = (f(Q3) + f(Q0) - f(Q1) - f(Q2))/h²
+    Onde e = c3.
+    Dessa forma, podemos interpolar a função em (x0, y0) aplicando f(x0, y0).
+    Para simplificar um pouco mais e tornar as contas mais fáceis, assumimos que Q0 é a origem do sistema de coordenadas (perceba que podemos fazer isso para todos os pixels da imagem, já que a interpolação só ocorre dentro do quadrado Q0Q1Q2QQ3 não havendo necessidade de fixar uma origem igual para todos os pixels).
+    Segue, então, que a = b = 0 e assim teremos
+    c0 = f(Q0); c1 = (f(Q1) - f(Q0)) / h; c2 = (f(Q2) - f(Q0))/h e c3 = (f(Q3) + f(Q0) - f(Q1) - f(Q2))/h²
+    Supondo que o espaçamento é de uma unidade (h = 1), teremos o Unity Square, onde calculamos os pontos como:
+    FUNÇAO AQUI
+    Para o nosso algoritmo, usamos essa suposição para facilitar as contas e permitir o uso das operações matriciais do Octave, ou seja, aplicamos paralelamente essa função para gerar os pixels que queremos (sempre considerando que o sistema de coordenadas está no pixel de coordenada Q0 em relação ao pixel que queremos interpolar).
+
+    -Resultados obtidos no Zoologico
+
+    -Resultados obtidos na Selva
+
+
+* Interpolação Bicúbica
+    Este método é uma extensão do método de spline cúbica para o R^2.
+    A ideia desse método é um pouco mais sofisticada que a anterior, porque aqui exigimos que a função seja suave e queremos que a função interpoladora também o seja. Para isso, vamos considerar, novamente, os 4 pixels conhecidos (Q0, Q1, Q2 e Q3) com as mesmas coordenadas vistas anteriormente. Para a interpolação de um pixel com coordenada (x0, y0), onde x0 está contido no intervalo [a, a + h] e y0 no intervalo [b, b+ h], vamos aproximar a função geradora f por uma função v que deverá, além de interpolar f, interpolar f' também, ou seja, /*VERIFICAR*/ v'(Q0) = f'(Q0), v'(Q1) = f'(Q1), v'(Q2) = f'(Q2) e v'(Q3) = f'(Q3), logo, v é dada por:
+    FUNÇÃO AQUI
+    E a nossa aproximação da derivada é uma extensão da aproximação de derivadas para uma variavel, ou seja, vamos ter que fazer a diferença da função em um ponto menos a função do ponto adjacente dividido pela distância, ou seja:
+    DERIVADA AQUI
+    Perceba que quanto menor for o nosso h escolhido (o espaçamento teórico entre os pixels), melhor é a aproximação da derivada. Nosso objetivo é, então, tentar achar um h pequeno que faz com que o erro de aproximação continue dominando o de arredondamento (evitar cancelamento catastrófico). 
+    Dessa forma, teremos uma função interpoladora que será de classe C¹, ou seja, terá uma derivada primeira contínua e, assim, garantimos uma aproximação da imagem mais "suave" do que a bilinear, já que essa última não interpola a derivada.  
+
+    -Resultados obtidos no Zoologico
+
+    -Resultados obtidos na Selva
