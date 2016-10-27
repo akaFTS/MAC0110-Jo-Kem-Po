@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 function compress (originalImg, k)    % ler imagem e calcular o tamanho dela    img = imread(originalImg);    p = size(img, 1);    %n = p % k;    % se não existir n natural tal que p = n + (n-1)k, nao podemos compimir    %if (p != n + (n-1)*k) {    %    disp("Imagem não pode ser comprimida!");    %    return;    %}    % pegar só as linhas e colunas i tais que i é congruente a 1 mod (k+1)    newImg = img(1:(k+1):p, 1:(k+1):p, :);        % construir a imagem comprimida    imwrite(newImg, "compressed.png", 'Quality', 100);    end
+=======
+function compress (originalImg, k)    % ler imagem e calcular o tamanho dela    img = imread(originalImg);    p = size(img, 1);            % pegar só as linhas e colunas i tais que i = 1 mod (k+1)    newImg = img(1:(k+1):p, 1:(k+1):p, :);            %a partir daqui, só pra testar    n = size(newImg, 1);    if p != n + (n-1)*k        fprintf("nao da pra comprimir com esse k!\n");        return;    end    % construir a imagem comprimida    imwrite(newImg, "compressed.png", "Quality", 100);    end
+>>>>>>> 3019b0baa5243938b0b8800a3f4a52c56d1503d2
