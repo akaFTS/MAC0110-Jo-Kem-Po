@@ -57,7 +57,7 @@
 	 		\begin{array}{llll}
 				1 & 0 & 0 & 0\\
 				1 & h & 0 & 0\\
-				1 & 0 & h & 0)\\
+				1 & 0 & h & 0\\
 				1 & h & h & h^2	 		
 	 		\end{array}
 	 	\right]
@@ -71,8 +71,77 @@
 	 	\right]
 	 \]
 	 Podemos, então, utilizar as funções do Octave para calcular os coeficientes rapidamente. \par
-	 Na nossa implementação, selecionamos cada pixel conhecido e, para cada um da linha $i$ coluna $j$, definimos que ele é a origem do sistema de coordenadas, assim conseguimos simplificar as contas, já que os pixels adjacentes são $(0, h)$, $(h,0)$ e $(h,h)$ e teremos sempre as mesmas coordenadas dos pixels que queremos interpolar que serão os pontos tal que $(\dfrac{m}{k+1}*h, \dfrac{n}{k+1}*h)$ onde $m$, $n \in {1, 2, ..., k}$. Após isso, calculamos os coeficientes do polinômio $v$ e conseguimos interpolar todos os $(k+2)^2$ pontos que estão no quadrado definido entre o pixel conhecido da linha $i$ coluna $j$ e o pixel da linha $i+1$ coluna $j+1$, incluindo estes quatro pontos já conhecidos.\par
-	 Para realizar esta interpolação, adaptamos a equação responsável por interpolar um ponto (v(x,y) = [1 x y xy] * [a0; a1; a2; a3], não sei usar latex) para que ela pudesse em uma única multiplicação matricial nos retornar todos os pontos em ([0, h], [0, h]), em uma matriz quadrada (k+2)x(k+2). Esta nova equação é [1 x0 1 x0; 1 x1 1 x1; ... 1 xn 1 xn]*[matriz diagonal dos coeficientes]*[1 1 ... 1; 1 1 ... 1; y0 y1 ... yn; y0 y1 ... yn], com n = k+1. Assim, para cada pixel conhecido na imagem (excetuando-se os da última linha e última coluna), calculamos os coeficientes da v(x,y) que abrange o quadrado de lado h formado por este pixel e seus vizinhos, e utilizamos esta multiplicação matricial para interpolar todos os pontos novos dentro do quadrado de uma só vez. Em seguida, esse quadrado é posicionado na matriz que receberá a imagem interpolada, no seu devido local. Ao final, a combinação de todos os quadrados terá gerado a imagem interpolada. \par
+	 Na nossa implementação, selecionamos cada pixel conhecido e, para cada um da linha $i$ coluna $j$, definimos que ele é a origem do sistema de coordenadas, assim conseguimos simplificar as contas, já que os pixels adjacentes são $(0, h)$, $(h,0)$ e $(h,h)$ e teremos sempre as mesmas coordenadas dos pixels que queremos interpolar que serão os pontos tal que $(\dfrac{m}{k+1}h, \dfrac{n}{k+1}h)$ onde $m$, $n \in {1, 2, ..., k}$. Após isso, calculamos os coeficientes do polinômio $v$ e conseguimos interpolar todos os $(k+2)^2$ pontos que estão no quadrado definido entre o pixel conhecido da linha $i$ coluna $j$ e o pixel da linha $i+1$ coluna $j+1$, incluindo estes quatro pontos já conhecidos.\par
+	 Para realizar esta interpolação, adaptamos a equação responsável por interpolar um ponto, que é dada por:
+	 \[
+	 	v(x,y) = 
+	 	\left[
+	 		\begin{array}{llll}
+		 		1 & x & y & xy
+	 		\end{array}
+	 	\right]
+	 	\left[
+	 		\begin{array}{llll}
+	 		c_{0}\\
+	 		c_{1}\\
+	 		c_{2}\\
+	 		c_{3}
+	 		\end{array}
+	 	\right]
+	 \]
+	  para que ela pudesse, em uma única multiplicação matricial, nos retornar todos os pontos compreendidos entre $[0, h]$x$[0, h]$, em uma matriz quadrada $k+2$x$k+2$. \par
+	  A equação que nos dá todos os pontos é:
+	  \begin{equation}
+	  \begin{aligned}
+	  	\left[
+	  	\begin{array}{cccc}
+	  	
+	  		v(x_{0}, y_{0}) & ... & v(x_{n}, y_{0})\\
+	  		v(x_{0}, y_{1}) & ... & v(x_{n}, y_{1})\\
+	  				       &  .  &    \\
+	  				       &  .  &    \\
+	  				       &  .  &    \\ 	
+	  		v(x_{0}, y_{n}) & ... & v(x_{n}, y_{n})
+	  			
+	  	\end{array}
+	  	\right]
+	  	= 
+	  	X
+	  	\left[
+	  		\begin{array}{cccc}
+	  			c_{0}     & 0     & 0     & 0\\
+	  			0         & c_{1} & 0     & 0\\
+	  			0         &  0    & c_{2} & 0\\
+	  			0         &  0    &   0   & c_{3} 
+	  		\end{array}
+	  	\right]
+	  	Y
+	  	\end{aligned}
+	  \end{equation}\par 
+	  Onde 
+	  \[
+	  	X = 
+	  	\left[
+  		\begin{array}{cccc}
+  			1 & x_{0} & 1 & x_{0}\\
+  			1 & x_{1} & 1 & x_{1}\\
+				&.\\
+				&.\\
+				&.\\
+  			1 & x_{n} & 1 & x_{n}\\
+  		\end{array}
+  	\right]
+  	,Y =
+	  	\left[
+	  		\begin{array}{cccc}
+	  			1     & 1     & ...     & 1\\
+	  			1     & 1     & ...     & 1\\
+	  			y_{0} & y_{1} & ...     & y_{n}\\
+	  			y_{0} & y_{1} & ...     & y_{n}
+	  		\end{array}
+	  	\right]
+	  \]
+	  e $(x_{l}, y_{m})$ são as coordenadas dos novos pixels que queremos interpolar. Assim, para cada pixel conhecido na imagem (excetuando-se os da última linha e última coluna), calculamos os coeficientes da $v(x,y)$ que abrange o quadrado de lado $h$ formado por este pixel e seus vizinhos, e utilizamos esta multiplicação matricial para interpolar todos os pontos novos dentro do quadrado de uma só vez. Em seguida, esse quadrado é posicionado na matriz que receberá a imagem interpolada, no seu devido local. Ao final, a combinação de todos os quadrados terá gerado a imagem interpolada. \par
 	 Com esse método, garantimos um custo de tempo quadrático ($\mathcal{O}(p^2)$ onde $p$ é a quantidade de pixels na vertical ou horizontal da imagem original) pois precisamos olhar para cada pixel da imagem.
 		\subsection{Resultados no Zoológico}
 		Nesses experimentos, executamos o método com 6 tipos diferentes de funções $\mathbb{R}^2 \rightarrow \mathbb{R}^3$ para a criação da imagem original, são elas:
@@ -211,7 +280,7 @@
 	\section{Interpolação Bicúbica por partes}
 	A ideia desse método é um pouco mais sofisticado que o anterior, pois aqui exigimos que a função seja suave e que a função interpoladora também o seja em todo o domínio da interpolação. \par
 	Para entender o funcionamento, vamos considerar novamente os quatro pixels adjacentes $Q_{0}, Q_{1}, Q_{2}, Q_{3}$ com as mesmas coordenadas vistas anteriormente. Para interpolar um pixel que possui coordenadas $(x_{0}, y_{0})$ tal que $x_{0} \in [x_{i}, x_{i+1}]$ e $y_{0} \in [y_{j}, y_{j+1}]$, vamos interpolar a função $f$ geradora da imagem por uma função $v$ que interpolará também as primeiras derivadas em relação a x e y e a segunda derivada mista. Isso garante uma aproximação das derivadas (a suavidade da função deverá ser interpolada também). \par
-	Em nossa implementação, porém, não tinhamos acesso as derivadas da função geradora da imagem $f$, por isso, para obte-la, usamos fórmulas que permitem aproximar esses valores. Nas bordas da imagem, utilizamos uma aproximação que leva em conta apenas um pixel a frente, a taxa de erro sendo $\mathcal{O}(h)$. No meio da imagem, usamos a fórmula centrada, que permite um erro de $\mathcal{O}(h^2)$, ou seja, uma aproximação melhor que nas bordas, entretanto, ficamos limitados com o erro das bordas. Vale lembrar que quanto menor for $h$, melhor será nossa aproximação e, consequentemente, nossa interpolação. Devemos apenas ficar atentos para escolha de um $h$ que seja suficientemente pequeno e que continue mantendo o erro de aproximação do método dominando o erro de arredondamento. Para manusear esses casos diferentes ao calcular as derivadas, implementamos uma \'moldura\' na matriz, repetindo a primeira e última linhas e colunas. Depois disso, varremos todos os pixels conhecidos, que são os índices da matriz (sem varrer os índices da moldura) e manuseamos a conta normalmente, pois ao referenciarmos índices que estariam fora da matriz, vamos acabar referenciando índices da moldura, que por serem os mesmos da primeira e última linhas e colunas, faz com que automaticamente estejamos utilizando o método de diferença lateral. Depois de calcularmos uma série de derivadas parciais e mistas, calculamos os coeficientes do polinômio e, usando uma estratégia similar à do caso bilinear (porém sem necessidade de modificar a fórmula, pois ela já permite isso), adicionamos mais linhas ao vetor X e mais colunas ao vetor Y para podermos calcular todos os pontos dentro do quadrado de uma vez só. Com isso, posicionamos o quadrado na matriz que se tornará a imagem interpolada, de modo idêntico ao bilinear.\par
+	Em nossa implementação, porém, não tinhamos acesso as derivadas da função geradora da imagem $f$, por isso, para obte-la, usamos fórmulas que permitem aproximar esses valores. Nas bordas da imagem, utilizamos uma aproximação que leva em conta apenas um pixel a frente, a taxa de erro sendo $\mathcal{O}(h)$. No meio da imagem, usamos a fórmula centrada, que permite um erro de $\mathcal{O}(h^2)$, ou seja, uma aproximação melhor que nas bordas, entretanto, ficamos limitados com o erro das bordas. Vale lembrar que quanto menor for $h$, melhor será nossa aproximação e, consequentemente, nossa interpolação. Devemos apenas ficar atentos para escolha de um $h$ que seja suficientemente pequeno e que continue mantendo o erro de aproximação do método dominando o erro de arredondamento. Para manusear esses casos diferentes ao calcular as derivadas, implementamos uma \'moldura\' na matriz, repetindo a primeira e última linhas e colunas. Depois disso, varremos todos os pixels conhecidos, que são os índices da matriz (sem varrer os índices da moldura) e manuseamos a conta normalmente, pois ao referenciarmos índices que estariam fora da matriz, vamos acabar referenciando índices da moldura, que por serem os mesmos da primeira e última linhas e colunas, faz com que automaticamente estejamos utilizando o método de diferença lateral. Depois de calcularmos uma série de derivadas parciais e mistas, calculamos os coeficientes do polinômio e, usando uma estratégia similar a do caso bilinear (porém sem necessidade de modificar a fórmula, pois ela já permite isso), adicionamos mais linhas ao vetor X e mais colunas ao vetor Y para podermos calcular todos os pontos dentro do quadrado de uma vez só. Com isso, posicionamos o quadrado na matriz que se tornará a imagem interpolada, de modo idêntico ao bilinear.\par
 	De forma semelhante ao visto no bilinear, como nosso algoritmo passa por cada um dos pixels, então podemos dizer que o tempo consumido é $\mathcal{O}(p^2)$, onde $p$ é a quantidade de pixels em na horizontal (ou vertical) da imagem original.
 	
 		\subsection{Resultados no Zoológico}

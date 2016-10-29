@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.10.23)  28 OCT 2016 22:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.10.23)  29 OCT 2016 18:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -477,470 +477,468 @@ T1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT
 onde $\OML/cmm/m/it/10 x[]; x[]; y[]; y[] \OMS/cmsy/m/n/10 2
  []
 
-[2] <image_test//zoo/1.jpg, id=25, 404.51125pt x 404.51125pt>
+[2] [3] <image_test//zoo/1.jpg, id=28, 404.51125pt x 404.51125pt>
 File: image_test//zoo/1.jpg Graphic file (type jpg)
 
 <use image_test//zoo/1.jpg>
-Package pdftex.def Info: image_test//zoo/1.jpg used on input line 97.
+Package pdftex.def Info: image_test//zoo/1.jpg used on input line 166.
 (pdftex.def)             Requested size: 100.37537pt x 100.37453pt.
 
-<out_test//zoo/decompressed_1.png, id=26, 404.51125pt x 404.51125pt>
+<out_test//zoo/decompressed_1.png, id=29, 404.51125pt x 404.51125pt>
 File: out_test//zoo/decompressed_1.png Graphic file (type png)
 
 <use out_test//zoo/decompressed_1.png>
-Package pdftex.def Info: out_test//zoo/decompressed_1.png used on input line 98
-.
+Package pdftex.def Info: out_test//zoo/decompressed_1.png used on input line 16
+7.
 (pdftex.def)             Requested size: 100.37537pt x 100.37453pt.
- [3]
-<image_test//zoo/2.jpg, id=33, 404.51125pt x 404.51125pt>
+ [4]
+<image_test//zoo/2.jpg, id=35, 404.51125pt x 404.51125pt>
 File: image_test//zoo/2.jpg Graphic file (type jpg)
 
 <use image_test//zoo/2.jpg>
-Package pdftex.def Info: image_test//zoo/2.jpg used on input line 107.
+Package pdftex.def Info: image_test//zoo/2.jpg used on input line 176.
 (pdftex.def)             Requested size: 100.37537pt x 100.37453pt.
 
-<out_test//zoo/decompressed_2.png, id=34, 404.51125pt x 404.51125pt>
+<out_test//zoo/decompressed_2.png, id=36, 404.51125pt x 404.51125pt>
 File: out_test//zoo/decompressed_2.png Graphic file (type png)
 
 <use out_test//zoo/decompressed_2.png>
-Package pdftex.def Info: out_test//zoo/decompressed_2.png used on input line 10
-8.
+Package pdftex.def Info: out_test//zoo/decompressed_2.png used on input line 17
+7.
 (pdftex.def)             Requested size: 100.37537pt x 100.37453pt.
 
-<image_test//zoo/3.jpg, id=35, 404.51125pt x 404.51125pt>
+<image_test//zoo/3.jpg, id=37, 404.51125pt x 404.51125pt>
 File: image_test//zoo/3.jpg Graphic file (type jpg)
 
 <use image_test//zoo/3.jpg>
-Package pdftex.def Info: image_test//zoo/3.jpg used on input line 116.
+Package pdftex.def Info: image_test//zoo/3.jpg used on input line 185.
 (pdftex.def)             Requested size: 100.37537pt x 100.37453pt.
 
-<out_test//zoo/decompressed_3.png, id=36, 404.51125pt x 404.51125pt>
+<out_test//zoo/decompressed_3.png, id=38, 404.51125pt x 404.51125pt>
 File: out_test//zoo/decompressed_3.png Graphic file (type png)
 
 <use out_test//zoo/decompressed_3.png>
-Package pdftex.def Info: out_test//zoo/decompressed_3.png used on input line 11
-7.
+Package pdftex.def Info: out_test//zoo/decompressed_3.png used on input line 18
+6.
 (pdftex.def)             Requested size: 100.37537pt x 100.37453pt.
- [4 <./image_test//zoo/1.jpg> <./out_test//zoo/decompressed_1.png (PNG copy)> <
+ [5 <./image_test//zoo/1.jpg> <./out_test//zoo/decompressed_1.png (PNG copy)> <
 ./image_test//zoo/2.jpg> <./out_test//zoo/decompressed_2.png (PNG copy)>]
-<image_test//zoo/4.jpg, id=40, 404.51125pt x 404.51125pt>
+<image_test//zoo/4.jpg, id=43, 404.51125pt x 404.51125pt>
 File: image_test//zoo/4.jpg Graphic file (type jpg)
 
 <use image_test//zoo/4.jpg>
-Package pdftex.def Info: image_test//zoo/4.jpg used on input line 126.
+Package pdftex.def Info: image_test//zoo/4.jpg used on input line 195.
 (pdftex.def)             Requested size: 100.37537pt x 100.37453pt.
 
-<out_test//zoo/decompressed_4.png, id=41, 404.51125pt x 404.51125pt>
+<out_test//zoo/decompressed_4.png, id=44, 404.51125pt x 404.51125pt>
 File: out_test//zoo/decompressed_4.png Graphic file (type png)
 
 <use out_test//zoo/decompressed_4.png>
-Package pdftex.def Info: out_test//zoo/decompressed_4.png used on input line 12
-7.
+Package pdftex.def Info: out_test//zoo/decompressed_4.png used on input line 19
+6.
 (pdftex.def)             Requested size: 100.37537pt x 100.37453pt.
 
-<image_test//zoo/5.jpg, id=42, 404.51125pt x 404.51125pt>
+<image_test//zoo/5.jpg, id=45, 404.51125pt x 404.51125pt>
 File: image_test//zoo/5.jpg Graphic file (type jpg)
 
 <use image_test//zoo/5.jpg>
-Package pdftex.def Info: image_test//zoo/5.jpg used on input line 135.
+Package pdftex.def Info: image_test//zoo/5.jpg used on input line 204.
 (pdftex.def)             Requested size: 100.37537pt x 100.37453pt.
 
-<out_test//zoo/decompressed_5.png, id=43, 404.51125pt x 404.51125pt>
+<out_test//zoo/decompressed_5.png, id=46, 404.51125pt x 404.51125pt>
 File: out_test//zoo/decompressed_5.png Graphic file (type png)
 
 <use out_test//zoo/decompressed_5.png>
-Package pdftex.def Info: out_test//zoo/decompressed_5.png used on input line 13
-6.
+Package pdftex.def Info: out_test//zoo/decompressed_5.png used on input line 20
+5.
 (pdftex.def)             Requested size: 100.37537pt x 100.37453pt.
- [5 <./image_test//zoo/3.jpg> <./out_test//zoo/decompressed_3.png (PNG copy)> <
+ [6 <./image_test//zoo/3.jpg> <./out_test//zoo/decompressed_3.png (PNG copy)> <
 ./image_test//zoo/4.jpg> <./out_test//zoo/decompressed_4.png (PNG copy)> <./ima
 ge_test//zoo/5.jpg> <./out_test//zoo/decompressed_5.png (PNG copy)>]
-<image_test//zoo/6.jpg, id=48, 404.51125pt x 404.51125pt>
+<image_test//zoo/6.jpg, id=50, 404.51125pt x 404.51125pt>
 File: image_test//zoo/6.jpg Graphic file (type jpg)
 
 <use image_test//zoo/6.jpg>
-Package pdftex.def Info: image_test//zoo/6.jpg used on input line 144.
+Package pdftex.def Info: image_test//zoo/6.jpg used on input line 213.
 (pdftex.def)             Requested size: 100.37537pt x 100.37453pt.
 
-<out_test//zoo/decompressed_6.png, id=49, 404.51125pt x 404.51125pt>
+<out_test//zoo/decompressed_6.png, id=51, 404.51125pt x 404.51125pt>
 File: out_test//zoo/decompressed_6.png Graphic file (type png)
 
 <use out_test//zoo/decompressed_6.png>
-Package pdftex.def Info: out_test//zoo/decompressed_6.png used on input line 14
-5.
+Package pdftex.def Info: out_test//zoo/decompressed_6.png used on input line 21
+4.
 (pdftex.def)             Requested size: 100.37537pt x 100.37453pt.
 
-<image_test//zoo/k7.jpg, id=50, 233.87375pt x 233.87375pt>
+<image_test//zoo/k7.jpg, id=52, 233.87375pt x 233.87375pt>
 File: image_test//zoo/k7.jpg Graphic file (type jpg)
 
 <use image_test//zoo/k7.jpg>
-Package pdftex.def Info: image_test//zoo/k7.jpg used on input line 154.
+Package pdftex.def Info: image_test//zoo/k7.jpg used on input line 223.
 (pdftex.def)             Requested size: 100.37537pt x 100.3746pt.
 
-<out_test//zoo/decompressed_k7.png, id=51, 233.87375pt x 233.87375pt>
+<out_test//zoo/decompressed_k7.png, id=53, 233.87375pt x 233.87375pt>
 File: out_test//zoo/decompressed_k7.png Graphic file (type png)
 
 <use out_test//zoo/decompressed_k7.png>
-Package pdftex.def Info: out_test//zoo/decompressed_k7.png used on input line 1
-55.
+Package pdftex.def Info: out_test//zoo/decompressed_k7.png used on input line 2
+24.
 (pdftex.def)             Requested size: 100.37537pt x 100.3746pt.
- [6 <./image_test//zoo/6.jpg> <./out_test//zoo/decompressed_6.png (PNG copy)> <
+ [7 <./image_test//zoo/6.jpg> <./out_test//zoo/decompressed_6.png (PNG copy)> <
 ./image_test//zoo/k7.jpg> <./out_test//zoo/decompressed_k7.png (PNG copy)>]
 File: image_test//zoo/k7.jpg Graphic file (type jpg)
  <use image_test//zoo/k7.jpg>
-Package pdftex.def Info: image_test//zoo/k7.jpg used on input line 163.
+Package pdftex.def Info: image_test//zoo/k7.jpg used on input line 232.
 (pdftex.def)             Requested size: 100.37537pt x 100.3746pt.
 
-<out_test//zoo/decompressed_k1-3.png, id=55, 233.87375pt x 233.87375pt>
+<out_test//zoo/decompressed_k1-3.png, id=57, 233.87375pt x 233.87375pt>
 File: out_test//zoo/decompressed_k1-3.png Graphic file (type png)
 
 <use out_test//zoo/decompressed_k1-3.png>
 Package pdftex.def Info: out_test//zoo/decompressed_k1-3.png used on input line
- 164.
+ 233.
 (pdftex.def)             Requested size: 100.37537pt x 100.3746pt.
 
-<image_test//jungle/image01.jpg, id=56, 496.85625pt x 496.85625pt>
+<image_test//jungle/image01.jpg, id=58, 496.85625pt x 496.85625pt>
 File: image_test//jungle/image01.jpg Graphic file (type jpg)
 
 <use image_test//jungle/image01.jpg>
-Package pdftex.def Info: image_test//jungle/image01.jpg used on input line 175.
+Package pdftex.def Info: image_test//jungle/image01.jpg used on input line 244.
 
 (pdftex.def)             Requested size: 100.37537pt x 100.37022pt.
 
-<out_test//jungle/decompressed_11.png, id=57, 496.85625pt x 496.85625pt>
+<out_test//jungle/decompressed_11.png, id=59, 496.85625pt x 496.85625pt>
 File: out_test//jungle/decompressed_11.png Graphic file (type png)
 
 <use out_test//jungle/decompressed_11.png>
 Package pdftex.def Info: out_test//jungle/decompressed_11.png used on input lin
-e 176.
+e 245.
 (pdftex.def)             Requested size: 100.37537pt x 100.37022pt.
 
-<image_test//jungle/image02.jpg, id=58, 496.85625pt x 496.85625pt>
+<image_test//jungle/image02.jpg, id=60, 496.85625pt x 496.85625pt>
 File: image_test//jungle/image02.jpg Graphic file (type jpg)
 
 <use image_test//jungle/image02.jpg>
-Package pdftex.def Info: image_test//jungle/image02.jpg used on input line 182.
+Package pdftex.def Info: image_test//jungle/image02.jpg used on input line 251.
 
 (pdftex.def)             Requested size: 100.37537pt x 100.37022pt.
 
-<out_test//jungle/decompressed_12.png, id=59, 496.85625pt x 496.85625pt>
+<out_test//jungle/decompressed_12.png, id=61, 496.85625pt x 496.85625pt>
 File: out_test//jungle/decompressed_12.png Graphic file (type png)
 
 <use out_test//jungle/decompressed_12.png>
 Package pdftex.def Info: out_test//jungle/decompressed_12.png used on input lin
-e 183.
+e 252.
 (pdftex.def)             Requested size: 100.37537pt x 100.37022pt.
- [7 <./out_test//zoo/decompressed_k1-3.png (PNG copy)> <./image_test//jungle/im
+ [8 <./out_test//zoo/decompressed_k1-3.png (PNG copy)> <./image_test//jungle/im
 age01.jpg> <./out_test//jungle/decompressed_11.png (PNG copy)>]
-<image_test//jungle/image03.jpg, id=63, 496.85625pt x 496.85625pt>
+<image_test//jungle/image03.jpg, id=65, 496.85625pt x 496.85625pt>
 File: image_test//jungle/image03.jpg Graphic file (type jpg)
 
 <use image_test//jungle/image03.jpg>
-Package pdftex.def Info: image_test//jungle/image03.jpg used on input line 189.
+Package pdftex.def Info: image_test//jungle/image03.jpg used on input line 258.
 
 (pdftex.def)             Requested size: 100.37537pt x 100.37022pt.
 
-<out_test//jungle/decompressed_13.png, id=64, 496.85625pt x 496.85625pt>
+<out_test//jungle/decompressed_13.png, id=66, 496.85625pt x 496.85625pt>
 File: out_test//jungle/decompressed_13.png Graphic file (type png)
 
 <use out_test//jungle/decompressed_13.png>
 Package pdftex.def Info: out_test//jungle/decompressed_13.png used on input lin
-e 190.
+e 259.
 (pdftex.def)             Requested size: 100.37537pt x 100.37022pt.
 
-<image_test//jungle/image04.jpg, id=65, 119.2455pt x 119.2455pt>
+<image_test//jungle/image04.jpg, id=67, 119.2455pt x 119.2455pt>
 File: image_test//jungle/image04.jpg Graphic file (type jpg)
 
 <use image_test//jungle/image04.jpg>
-Package pdftex.def Info: image_test//jungle/image04.jpg used on input line 196.
+Package pdftex.def Info: image_test//jungle/image04.jpg used on input line 265.
 
 (pdftex.def)             Requested size: 100.37537pt x 100.37659pt.
 
-<out_test//jungle/decompressed_14.png, id=66, 496.85625pt x 496.85625pt>
+<out_test//jungle/decompressed_14.png, id=68, 496.85625pt x 496.85625pt>
 File: out_test//jungle/decompressed_14.png Graphic file (type png)
 
 <use out_test//jungle/decompressed_14.png>
 Package pdftex.def Info: out_test//jungle/decompressed_14.png used on input lin
-e 197.
+e 266.
 (pdftex.def)             Requested size: 100.37537pt x 100.37022pt.
 
-<image_test//jungle/image01-k7.jpg, id=67, 490.83376pt x 490.83376pt>
+<image_test//jungle/image01-k7.jpg, id=69, 490.83376pt x 490.83376pt>
 File: image_test//jungle/image01-k7.jpg Graphic file (type jpg)
 
 <use image_test//jungle/image01-k7.jpg>
 Package pdftex.def Info: image_test//jungle/image01-k7.jpg used on input line 2
-05.
+74.
 (pdftex.def)             Requested size: 100.37537pt x 100.3744pt.
 
-<out_test//jungle/decompressed_1-k7-h1.png, id=68, 490.83376pt x 490.83376pt>
+<out_test//jungle/decompressed_1-k7-h1.png, id=70, 490.83376pt x 490.83376pt>
 File: out_test//jungle/decompressed_1-k7-h1.png Graphic file (type png)
 
 <use out_test//jungle/decompressed_1-k7-h1.png>
 Package pdftex.def Info: out_test//jungle/decompressed_1-k7-h1.png used on inpu
-t line 206.
+t line 275.
 (pdftex.def)             Requested size: 100.37537pt x 100.3744pt.
 
-<out_test//jungle/decompressed_1-k1-3-h1.png, id=69, 490.83376pt x 490.83376pt>
+<out_test//jungle/decompressed_1-k1-3-h1.png, id=71, 490.83376pt x 490.83376pt>
 File: out_test//jungle/decompressed_1-k1-3-h1.png Graphic file (type png)
 <use out_test//jungle/decompressed_1-k1-3-h1.png>
 Package pdftex.def Info: out_test//jungle/decompressed_1-k1-3-h1.png used on in
-put line 207.
+put line 276.
 (pdftex.def)             Requested size: 100.37537pt x 100.3744pt.
- [8 <./image_test//jungle/image02.jpg> <./out_test//jungle/decompressed_12.png 
+ [9 <./image_test//jungle/image02.jpg> <./out_test//jungle/decompressed_12.png 
 (PNG copy)> <./image_test//jungle/image03.jpg> <./out_test//jungle/decompressed
 _13.png (PNG copy)> <./image_test//jungle/image04.jpg> <./out_test//jungle/deco
 mpressed_14.png (PNG copy)>]
-[9 <./image_test//jungle/image01-k7.jpg> <./out_test//jungle/decompressed_1-k7-
-h1.png (PNG copy)> <./out_test//jungle/decompressed_1-k1-3-h1.png (PNG copy)>]
+[10 <./image_test//jungle/image01-k7.jpg> <./out_test//jungle/decompressed_1-k7
+-h1.png (PNG copy)> <./out_test//jungle/decompressed_1-k1-3-h1.png (PNG copy)>]
+[11]
 File: image_test//zoo/1.jpg Graphic file (type jpg)
-
-<use image_test//zoo/1.jpg>
-Package pdftex.def Info: image_test//zoo/1.jpg used on input line 227.
+ <use image_test//zoo/1.jpg>
+Package pdftex.def Info: image_test//zoo/1.jpg used on input line 294.
 (pdftex.def)             Requested size: 100.37537pt x 100.37453pt.
 
-<out_test//zoo/decompressed_21-h10^-4.png, id=76, 404.51125pt x 404.51125pt>
+<out_test//zoo/decompressed_21-h10^-4.png, id=82, 404.51125pt x 404.51125pt>
 File: out_test//zoo/decompressed_21-h10^-4.png Graphic file (type png)
 
 <use out_test//zoo/decompressed_21-h10^-4.png>
 Package pdftex.def Info: out_test//zoo/decompressed_21-h10^-4.png used on input
- line 228.
+ line 295.
 (pdftex.def)             Requested size: 100.37537pt x 100.37453pt.
 
-<out_test//zoo/decompressed_21-k5-h10^-4.png, id=77, 404.51125pt x 404.51125pt>
+<out_test//zoo/decompressed_21-k5-h10^-4.png, id=83, 404.51125pt x 404.51125pt>
 File: out_test//zoo/decompressed_21-k5-h10^-4.png Graphic file (type png)
 <use out_test//zoo/decompressed_21-k5-h10^-4.png>
 Package pdftex.def Info: out_test//zoo/decompressed_21-k5-h10^-4.png used on in
-put line 229.
+put line 296.
 (pdftex.def)             Requested size: 100.37537pt x 100.37453pt.
- [10]
 File: image_test//zoo/2.jpg Graphic file (type jpg)
-
-<use image_test//zoo/2.jpg>
-Package pdftex.def Info: image_test//zoo/2.jpg used on input line 236.
+ <use image_test//zoo/2.jpg>
+Package pdftex.def Info: image_test//zoo/2.jpg used on input line 303.
 (pdftex.def)             Requested size: 100.37537pt x 100.37453pt.
 
-<out_test//zoo/decompressed_22-k1-h10^-4.png, id=81, 404.51125pt x 404.51125pt>
+<out_test//zoo/decompressed_22-k1-h10^-4.png, id=84, 404.51125pt x 404.51125pt>
 File: out_test//zoo/decompressed_22-k1-h10^-4.png Graphic file (type png)
 <use out_test//zoo/decompressed_22-k1-h10^-4.png>
 Package pdftex.def Info: out_test//zoo/decompressed_22-k1-h10^-4.png used on in
-put line 237.
+put line 304.
 (pdftex.def)             Requested size: 100.37537pt x 100.37453pt.
 
-<out_test//zoo/decompressed_22-k5-h10^-4.png, id=82, 404.51125pt x 404.51125pt>
+<out_test//zoo/decompressed_22-k5-h10^-4.png, id=85, 404.51125pt x 404.51125pt>
 File: out_test//zoo/decompressed_22-k5-h10^-4.png Graphic file (type png)
 <use out_test//zoo/decompressed_22-k5-h10^-4.png>
 Package pdftex.def Info: out_test//zoo/decompressed_22-k5-h10^-4.png used on in
-put line 238.
+put line 305.
 (pdftex.def)             Requested size: 100.37537pt x 100.37453pt.
 File: image_test//zoo/3.jpg Graphic file (type jpg)
  <use image_test//zoo/3.jpg>
-Package pdftex.def Info: image_test//zoo/3.jpg used on input line 245.
+Package pdftex.def Info: image_test//zoo/3.jpg used on input line 312.
 (pdftex.def)             Requested size: 100.37537pt x 100.37453pt.
 
-<out_test//zoo/decompressed_23-k1-h10^-4.png, id=83, 404.51125pt x 404.51125pt>
+<out_test//zoo/decompressed_23-k1-h10^-4.png, id=86, 404.51125pt x 404.51125pt>
 File: out_test//zoo/decompressed_23-k1-h10^-4.png Graphic file (type png)
 <use out_test//zoo/decompressed_23-k1-h10^-4.png>
 Package pdftex.def Info: out_test//zoo/decompressed_23-k1-h10^-4.png used on in
-put line 246.
+put line 313.
 (pdftex.def)             Requested size: 100.37537pt x 100.37453pt.
 
-<out_test//zoo/decompressed_23-k5-h10^-4.png, id=84, 404.51125pt x 404.51125pt>
+<out_test//zoo/decompressed_23-k5-h10^-4.png, id=87, 404.51125pt x 404.51125pt>
 File: out_test//zoo/decompressed_23-k5-h10^-4.png Graphic file (type png)
 <use out_test//zoo/decompressed_23-k5-h10^-4.png>
 Package pdftex.def Info: out_test//zoo/decompressed_23-k5-h10^-4.png used on in
-put line 247.
+put line 314.
 (pdftex.def)             Requested size: 100.37537pt x 100.37453pt.
+ [12 <./out_test//zoo/decompressed_21-h10^-4.png (PNG copy)> <./out_test//zoo/d
+ecompressed_21-k5-h10^-4.png (PNG copy)> <./out_test//zoo/decompressed_22-k1-h1
+0^-4.png (PNG copy)> <./out_test//zoo/decompressed_22-k5-h10^-4.png (PNG copy)>
+]
 File: image_test//zoo/4.jpg Graphic file (type jpg)
  <use image_test//zoo/4.jpg>
-Package pdftex.def Info: image_test//zoo/4.jpg used on input line 255.
+Package pdftex.def Info: image_test//zoo/4.jpg used on input line 322.
 (pdftex.def)             Requested size: 100.37537pt x 100.37453pt.
 
-<out_test//zoo/decompressed_24-k1-h10^-4.png, id=85, 404.51125pt x 404.51125pt>
+<out_test//zoo/decompressed_24-k1-h10^-4.png, id=91, 404.51125pt x 404.51125pt>
 File: out_test//zoo/decompressed_24-k1-h10^-4.png Graphic file (type png)
 <use out_test//zoo/decompressed_24-k1-h10^-4.png>
 Package pdftex.def Info: out_test//zoo/decompressed_24-k1-h10^-4.png used on in
-put line 256.
+put line 323.
 (pdftex.def)             Requested size: 100.37537pt x 100.37453pt.
 
-<out_test//zoo/decompressed_24-k5-h10^-4.png, id=86, 404.51125pt x 404.51125pt>
+<out_test//zoo/decompressed_24-k5-h10^-4.png, id=92, 404.51125pt x 404.51125pt>
 File: out_test//zoo/decompressed_24-k5-h10^-4.png Graphic file (type png)
 <use out_test//zoo/decompressed_24-k5-h10^-4.png>
 Package pdftex.def Info: out_test//zoo/decompressed_24-k5-h10^-4.png used on in
-put line 257.
+put line 324.
 (pdftex.def)             Requested size: 100.37537pt x 100.37453pt.
- [11 <./out_test//zoo/decompressed_21-h10^-4.png (PNG copy)> <./out_test//zoo/d
-ecompressed_21-k5-h10^-4.png (PNG copy)> <./out_test//zoo/decompressed_22-k1-h1
-0^-4.png (PNG copy)> <./out_test//zoo/decompressed_22-k5-h10^-4.png (PNG copy)>
- <./out_test//zoo/decompressed_23-k1-h10^-4.png (PNG copy)> <./out_test//zoo/de
-compressed_23-k5-h10^-4.png (PNG copy)>]
 File: image_test//zoo/5.jpg Graphic file (type jpg)
  <use image_test//zoo/5.jpg>
-Package pdftex.def Info: image_test//zoo/5.jpg used on input line 264.
+Package pdftex.def Info: image_test//zoo/5.jpg used on input line 331.
 (pdftex.def)             Requested size: 100.37537pt x 100.37453pt.
 
-<out_test//zoo/decompressed_25-k1-h10^-4.png, id=91, 404.51125pt x 404.51125pt>
+<out_test//zoo/decompressed_25-k1-h10^-4.png, id=93, 404.51125pt x 404.51125pt>
 File: out_test//zoo/decompressed_25-k1-h10^-4.png Graphic file (type png)
 <use out_test//zoo/decompressed_25-k1-h10^-4.png>
 Package pdftex.def Info: out_test//zoo/decompressed_25-k1-h10^-4.png used on in
-put line 265.
+put line 332.
 (pdftex.def)             Requested size: 100.37537pt x 100.37453pt.
 
-<out_test//zoo/decompressed_25-k5-h10^-4.png, id=92, 404.51125pt x 404.51125pt>
+<out_test//zoo/decompressed_25-k5-h10^-4.png, id=94, 404.51125pt x 404.51125pt>
 File: out_test//zoo/decompressed_25-k5-h10^-4.png Graphic file (type png)
 <use out_test//zoo/decompressed_25-k5-h10^-4.png>
 Package pdftex.def Info: out_test//zoo/decompressed_25-k5-h10^-4.png used on in
-put line 266.
+put line 333.
 (pdftex.def)             Requested size: 100.37537pt x 100.37453pt.
 File: image_test//zoo/6.jpg Graphic file (type jpg)
  <use image_test//zoo/6.jpg>
-Package pdftex.def Info: image_test//zoo/6.jpg used on input line 272.
+Package pdftex.def Info: image_test//zoo/6.jpg used on input line 339.
 (pdftex.def)             Requested size: 100.37537pt x 100.37453pt.
 
-<out_test//zoo/decompressed_26-k1-h10^-4.png, id=93, 404.51125pt x 404.51125pt>
+<out_test//zoo/decompressed_26-k1-h10^-4.png, id=95, 404.51125pt x 404.51125pt>
 File: out_test//zoo/decompressed_26-k1-h10^-4.png Graphic file (type png)
 <use out_test//zoo/decompressed_26-k1-h10^-4.png>
 Package pdftex.def Info: out_test//zoo/decompressed_26-k1-h10^-4.png used on in
-put line 273.
+put line 340.
 (pdftex.def)             Requested size: 100.37537pt x 100.37453pt.
 
-<out_test//zoo/decompressed_26-k5-h10^-4.png, id=94, 404.51125pt x 404.51125pt>
+<out_test//zoo/decompressed_26-k5-h10^-4.png, id=96, 404.51125pt x 404.51125pt>
 File: out_test//zoo/decompressed_26-k5-h10^-4.png Graphic file (type png)
 <use out_test//zoo/decompressed_26-k5-h10^-4.png>
 Package pdftex.def Info: out_test//zoo/decompressed_26-k5-h10^-4.png used on in
-put line 274.
+put line 341.
 (pdftex.def)             Requested size: 100.37537pt x 100.37453pt.
- [12 <./out_test//zoo/decompressed_24-k1-h10^-4.png (PNG copy)> <./out_test//zo
-o/decompressed_24-k5-h10^-4.png (PNG copy)> <./out_test//zoo/decompressed_25-k1
--h10^-4.png (PNG copy)> <./out_test//zoo/decompressed_25-k5-h10^-4.png (PNG cop
-y)> <./out_test//zoo/decompressed_26-k1-h10^-4.png (PNG copy)> <./out_test//zoo
-/decompressed_26-k5-h10^-4.png (PNG copy)>]
+ [13 <./out_test//zoo/decompressed_23-k1-h10^-4.png (PNG copy)> <./out_test//zo
+o/decompressed_23-k5-h10^-4.png (PNG copy)> <./out_test//zoo/decompressed_24-k1
+-h10^-4.png (PNG copy)> <./out_test//zoo/decompressed_24-k5-h10^-4.png (PNG cop
+y)> <./out_test//zoo/decompressed_25-k1-h10^-4.png (PNG copy)> <./out_test//zoo
+/decompressed_25-k5-h10^-4.png (PNG copy)>]
 File: image_test//zoo/k7.jpg Graphic file (type jpg)
  <use image_test//zoo/k7.jpg>
-Package pdftex.def Info: image_test//zoo/k7.jpg used on input line 285.
+Package pdftex.def Info: image_test//zoo/k7.jpg used on input line 352.
 (pdftex.def)             Requested size: 100.37537pt x 100.3746pt.
 
-<out_test//zoo/decompressed_2-k7-h10^-4.png, id=98, 233.87375pt x 233.87375pt>
+<out_test//zoo/decompressed_2-k7-h10^-4.png, id=100, 233.87375pt x 233.87375pt>
 File: out_test//zoo/decompressed_2-k7-h10^-4.png Graphic file (type png)
-
 <use out_test//zoo/decompressed_2-k7-h10^-4.png>
 Package pdftex.def Info: out_test//zoo/decompressed_2-k7-h10^-4.png used on inp
-ut line 286.
+ut line 353.
 (pdftex.def)             Requested size: 100.37537pt x 100.3746pt.
 
-<out_test//zoo/decompressed_2-k1-3-h10^-4.png, id=99, 233.87375pt x 233.87375pt
->
+<out_test//zoo/decompressed_2-k1-3-h10^-4.png, id=101, 233.87375pt x 233.87375p
+t>
 File: out_test//zoo/decompressed_2-k1-3-h10^-4.png Graphic file (type png)
  <use out_test//zoo/decompressed_2-k1-3-h10^-4.png>
 Package pdftex.def Info: out_test//zoo/decompressed_2-k1-3-h10^-4.png used on i
-nput line 287.
+nput line 354.
 (pdftex.def)             Requested size: 100.37537pt x 100.3746pt.
 File: image_test//jungle/image01.jpg Graphic file (type jpg)
 
 <use image_test//jungle/image01.jpg>
-Package pdftex.def Info: image_test//jungle/image01.jpg used on input line 296.
+Package pdftex.def Info: image_test//jungle/image01.jpg used on input line 363.
 
 (pdftex.def)             Requested size: 100.37537pt x 100.37022pt.
 
-<out_test//jungle/decompressed_21-k1-h10^-4.png, id=100, 496.85625pt x 496.8562
+<out_test//jungle/decompressed_21-k1-h10^-4.png, id=102, 496.85625pt x 496.8562
 5pt>
 File: out_test//jungle/decompressed_21-k1-h10^-4.png Graphic file (type png)
  <use out_test//jungle/decompressed_21-k1-h10^-4.png>
 Package pdftex.def Info: out_test//jungle/decompressed_21-k1-h10^-4.png used on
- input line 297.
+ input line 364.
 (pdftex.def)             Requested size: 100.37537pt x 100.37022pt.
+ [14 <./out_test//zoo/decompressed_26-k1-h10^-4.png (PNG copy)> <./out_test//zo
+o/decompressed_26-k5-h10^-4.png (PNG copy)> <./out_test//zoo/decompressed_2-k7-
+h10^-4.png (PNG copy)> <./out_test//zoo/decompressed_2-k1-3-h10^-4.png (PNG cop
+y)>]
 File: image_test//jungle/image02.jpg Graphic file (type jpg)
 
 <use image_test//jungle/image02.jpg>
-Package pdftex.def Info: image_test//jungle/image02.jpg used on input line 303.
+Package pdftex.def Info: image_test//jungle/image02.jpg used on input line 370.
 
 (pdftex.def)             Requested size: 100.37537pt x 100.37022pt.
 
-<out_test//jungle/decompressed_22-k1-h10^-4.png, id=101, 496.85625pt x 496.8562
+<out_test//jungle/decompressed_22-k1-h10^-4.png, id=106, 496.85625pt x 496.8562
 5pt>
 File: out_test//jungle/decompressed_22-k1-h10^-4.png Graphic file (type png)
  <use out_test//jungle/decompressed_22-k1-h10^-4.png>
 Package pdftex.def Info: out_test//jungle/decompressed_22-k1-h10^-4.png used on
- input line 304.
+ input line 371.
 (pdftex.def)             Requested size: 100.37537pt x 100.37022pt.
- [13 <./out_test//zoo/decompressed_2-k7-h10^-4.png (PNG copy)> <./out_test//zoo
-/decompressed_2-k1-3-h10^-4.png (PNG copy)> <./out_test//jungle/decompressed_21
--k1-h10^-4.png (PNG copy)>]
 File: image_test//jungle/image03.jpg Graphic file (type jpg)
- <use image_test//jungle/image03.jpg>
-Package pdftex.def Info: image_test//jungle/image03.jpg used on input line 310.
+
+<use image_test//jungle/image03.jpg>
+Package pdftex.def Info: image_test//jungle/image03.jpg used on input line 377.
 
 (pdftex.def)             Requested size: 100.37537pt x 100.37022pt.
 
-<out_test//jungle/decompressed_23-k1-h10^-4.png, id=105, 496.85625pt x 496.8562
+<out_test//jungle/decompressed_23-k1-h10^-4.png, id=107, 496.85625pt x 496.8562
 5pt>
 File: out_test//jungle/decompressed_23-k1-h10^-4.png Graphic file (type png)
  <use out_test//jungle/decompressed_23-k1-h10^-4.png>
 Package pdftex.def Info: out_test//jungle/decompressed_23-k1-h10^-4.png used on
- input line 311.
+ input line 378.
 (pdftex.def)             Requested size: 100.37537pt x 100.37022pt.
 File: image_test//jungle/image04.jpg Graphic file (type jpg)
 
 <use image_test//jungle/image04.jpg>
-Package pdftex.def Info: image_test//jungle/image04.jpg used on input line 317.
+Package pdftex.def Info: image_test//jungle/image04.jpg used on input line 384.
 
 (pdftex.def)             Requested size: 100.37537pt x 100.37659pt.
 
-<out_test//jungle/decompressed_24-k1-h10^-4.png, id=106, 496.85625pt x 496.8562
+<out_test//jungle/decompressed_24-k1-h10^-4.png, id=108, 496.85625pt x 496.8562
 5pt>
 File: out_test//jungle/decompressed_24-k1-h10^-4.png Graphic file (type png)
  <use out_test//jungle/decompressed_24-k1-h10^-4.png>
 Package pdftex.def Info: out_test//jungle/decompressed_24-k1-h10^-4.png used on
- input line 318.
+ input line 385.
 (pdftex.def)             Requested size: 100.37537pt x 100.37022pt.
+ [15 <./out_test//jungle/decompressed_21-k1-h10^-4.png (PNG copy)> <./out_test/
+/jungle/decompressed_22-k1-h10^-4.png (PNG copy)> <./out_test//jungle/decompres
+sed_23-k1-h10^-4.png (PNG copy)>]
 File: image_test//jungle/image01-k7.jpg Graphic file (type jpg)
-
-<use image_test//jungle/image01-k7.jpg>
+ <use image_test//jungle/image01-k7.jpg>
 Package pdftex.def Info: image_test//jungle/image01-k7.jpg used on input line 3
-27.
+94.
 (pdftex.def)             Requested size: 100.37537pt x 100.3744pt.
 
-<out_test//jungle/decompressed_2-k7-h1.png, id=107, 490.83376pt x 490.83376pt>
+<out_test//jungle/decompressed_2-k7-h1.png, id=112, 490.83376pt x 490.83376pt>
 File: out_test//jungle/decompressed_2-k7-h1.png Graphic file (type png)
 
 <use out_test//jungle/decompressed_2-k7-h1.png>
 Package pdftex.def Info: out_test//jungle/decompressed_2-k7-h1.png used on inpu
-t line 328.
+t line 395.
 (pdftex.def)             Requested size: 100.37537pt x 100.3744pt.
 
-<out_test//jungle/decompressed_2-k1-3-h1.png, id=108, 490.83376pt x 490.83376pt
+<out_test//jungle/decompressed_2-k1-3-h1.png, id=113, 490.83376pt x 490.83376pt
 >
 File: out_test//jungle/decompressed_2-k1-3-h1.png Graphic file (type png)
  <use out_test//jungle/decompressed_2-k1-3-h1.png>
 Package pdftex.def Info: out_test//jungle/decompressed_2-k1-3-h1.png used on in
-put line 329.
+put line 396.
 (pdftex.def)             Requested size: 100.37537pt x 100.3744pt.
- [14 <./out_test//jungle/decompressed_22-k1-h10^-4.png (PNG copy)> <./out_test/
-/jungle/decompressed_23-k1-h10^-4.png (PNG copy)> <./out_test//jungle/decompres
-sed_24-k1-h10^-4.png (PNG copy)>] [15 <./out_test//jungle/decompressed_2-k7-h1.
-png (PNG copy)> <./out_test//jungle/decompressed_2-k1-3-h1.png (PNG copy)>] [16
-] (./relatorio.aux) ) 
+ [16 <./out_test//jungle/decompressed_24-k1-h10^-4.png (PNG copy)> <./out_test/
+/jungle/decompressed_2-k7-h1.png (PNG copy)> <./out_test//jungle/decompressed_2
+-k1-3-h1.png (PNG copy)>]
+[17] (./relatorio.aux) ) 
 Here is how much of TeX's memory you used:
- 3909 strings out of 495028
- 61093 string characters out of 6181496
- 114684 words of memory out of 5000000
- 7019 multiletter control sequences out of 15000+600000
+ 3912 strings out of 495028
+ 61117 string characters out of 6181496
+ 117684 words of memory out of 5000000
+ 7022 multiletter control sequences out of 15000+600000
  7164 words of font info for 28 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 38i,8n,38p,835b,298s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-bx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/symbols/msbm10.pfb>
-Output written on relatorio.pdf (18 pages, 8256572 bytes).
+ 38i,13n,38p,1879b,298s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/symbols/msbm10.pfb>
+Output written on relatorio.pdf (19 pages, 8252081 bytes).
 PDF statistics:
  160 PDF objects out of 1000 (max. 8388607)
  80 compressed objects within 1 object stream
