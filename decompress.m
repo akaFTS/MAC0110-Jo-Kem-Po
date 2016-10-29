@@ -12,7 +12,7 @@ function decompress (compressedImg, method, k, h)
         toc
         %escrevemos a imagem final
 
-        imwrite(newImg, "out_test/jungle/decompressed_2-k1-3-h1.png", "Quality", 100);
+        imwrite(newImg, "decompress.png", "Quality", 100);
 end
 
 % interpolador bilinear
